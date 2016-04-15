@@ -1,0 +1,4 @@
+ErrorDocument 404 http://story.galaxiesanddust.de/index.php?page=404
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz

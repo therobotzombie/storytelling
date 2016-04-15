@@ -1,0 +1,458 @@
+/*===========================================
+=          B O O K    S C E N E S           =
+===========================================*/
+#scrolling { position: absolute; }
+.horizontal_scroll { overflow-x: hidden; }
+.scrolltext { overflow-y: hidden; display: block; z-index: 999; background: transparent; font-family: 'Vollkorn', serif; font-weight: 100; padding: 12vh 10vmin 10vh 10vmin; 
+font-size: 2.7rem; line-height: 1.7em; position: absolute; }
+.scrolltext p {  padding: 0 1.5em 0 1.5em; }
+.scrolltext .source { color: #666; font-family: 'Vollkorn', serif; margin-top: 5vmin; padding: 2em 0 2em 0; letter-spacing: 0.05em; line-height: 1.9rem; 
+font-size: 1.8rem; font-style: italic;  }
+.scrolltext .source span, .scrolltext .source strong { font-style: normal; color: #AD4B23; font-family: 'Open Sans'; text-transform: uppercase; font-weight: 600;  }
+.scrolltext .source span { color: #D98E40; }
+.scrolltext .source svg { fill: #4D3C2B; width: 100%;  padding: 0 0 1em 0; }
+.scroll { position: fixed; bottom: 0; left: 0; }
+.text:hover { cursor: pointer !important; }
+
+@media only screen and (min-width: 1024px) and (max-width : 1200px) {
+	.scrolltext { font-size: 2.6rem; }
+	.scrolltext .source { font-size: 1.7rem; }
+}
+@media only screen and (min-width: 767px) and (max-width : 1024px) {
+	.scrolltext { font-size: 2.3rem; line-height: 3.6rem; padding: 12vh 10vmin 10vh 10vmin;  }
+	.scrolltext p {  padding: 0 1em 0 1em; }
+	.scrolltext .source { font-size: 1.6rem; line-height: 1.7rem; }
+}
+@media only screen and (min-width: 480px) and (max-width : 767px) {
+	.scrolltext { font-size: 2.0rem; line-height: 2.7rem; padding: 12vh 10vmin 10vh 10vmin;  }
+	.scrolltext p {  padding: 0 1em 0 1em; }
+	.scrolltext .source { font-size: 1.5rem; line-height: 1.5rem; }
+}	
+@media only screen and (max-width : 480px) {
+	.scrolltext { font-size: 1.8rem; line-height: 2.4rem; width: 100%; }
+	.scrolltext p {  padding: 0; }
+	.scrolltext .source { font-size: 1.4rem; line-height: 1.4rem; }
+}
+
+/*==============================
+=           CANYON              =
+==============================*/	
+@keyframes wobbling {
+	0%, 100% { 
+		transform: rotate(-2deg);
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg); }
+	55% {
+		transform: rotate(2deg);
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg); }
+}
+
+@keyframes flying_right2 {	
+	0%, 100% { 
+		transform: rotate(40deg);
+		-webkit-transform: rotate(40deg);
+		-moz-transform: rotate(40deg);
+		-o-transform: rotate(40deg);
+		-ms-transform: rotate(40deg); }
+	50% {
+		transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+		-moz-transform: rotate(-10deg);
+		-o-transform: rotate(-10deg);
+		-ms-transform: rotate(-10deg); }
+}
+	
+@keyframes flying_left {
+	0%, 100% { 
+		transform: rotate(-30deg);
+		-webkit-transform: rotate(-30deg);
+		-moz-transform: rotate(-30deg);
+		-o-transform: rotate(-30deg);
+		-ms-transform: rotate(-30deg); }
+	50% {
+		transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
+		-moz-transform: rotate(20deg);
+		-o-transform: rotate(20deg);
+		-ms-transform: rotate(20deg); }
+}
+
+@keyframes flying_right {	
+	0%, 100% { 
+		transform: rotate(15deg);
+		-webkit-transform: rotate(15deg);
+		-moz-transform: rotate(25deg);
+		-o-transform: rotate(15deg);
+		-ms-transform: rotate(15deg); }
+	50% {
+		transform: rotate(-25deg);
+		-webkit-transform: rotate(-25deg);
+		-moz-transform: rotate(-25deg);
+		-o-transform: rotate(-25deg);
+		-ms-transform: rotate(-25deg); }
+}
+
+.wobbling { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; -moz-animation: wobbling 1.5s infinite; -webkit-animation: wobbling 1.5s infinite; animation: wobbling 1.5s infinite; -webkit-backface-visibility: hidden; }
+.flying_left2 { transform-origin: top right; -moz-transform-origin: 50% 60%; -webkit-transform-origin: top right; z-index: 999; -moz-animation: flying_right2 1.2s infinite; -webkit-animation: flying_right2 1.2s infinite; animation: flying_right2 1.2s infinite; -webkit-backface-visibility: hidden; }
+.flying_right2 { transform-origin: bottom left; -moz-transform-origin: 50% 50%; -webkit-transform-origin: bottom left; z-index: 999; -moz-animation: flying_left 1.2s infinite; -webkit-animation: flying_left 1.2s infinite; animation: flying_left 1.2s infinite; -webkit-backface-visibility: hidden;}
+.flying_left { transform-origin: bottom left; -moz-transform-origin: 58% 50%; -webkit-transform-origin: bottom left;  z-index: 999; -moz-animation: flying_left 1.5s infinite; -webkit-animation: flying_left 1.5s infinite; animation: flying_left 1.5s infinite; -webkit-backface-visibility: hidden; }
+.flying_right { transform-origin: bottom right; -moz-transform-origin: 58% 50%; -webkit-transform-origin: bottom right; z-index: 999; -moz-animation: flying_right 1.5s infinite; -webkit-animation: flying_right 1.5s infinite; animation: flying_right 1.5s infinite; -webkit-backface-visibility: hidden; }
+
+
+/* HARYIES  -------------- */
+#canyon .harpyie_small { width: 100%; height: 100%; z-index: 999; min-width: 920%; }
+#canyon .harpyie_small svg { display: block; z-index: 9999; position: absolute; top: -50vmin; left: 550vmin; width: 50vmin; }
+#canyon .harpyie_small2 { width: 100%; height: 100%; z-index: 999; min-width: 110%; }
+#canyon .harpyie_small2 svg { opacity: 0.9; display: block; z-index: 9999; position: absolute; top: 40vmin; left: 0; width: 30vmin; }
+
+#canyon .harpyie_big, #canyon .harpyie_big_transparent { width: 100%; height: 100%; z-index: 9000; min-width: 110%; }
+#canyon .harpyie_big svg { display: block; z-index: 99999; position: absolute; top: -36vh; left: -10vmin; width: 80vmin; }
+#canyon .harpyie_big_transparent svg { display: block; z-index: 9999999; position: absolute; top: 0; left: 10vmin; height: 45vmin; width: 40vmin; }
+#canyon .harpyie_big_transparent svg:hover { cursor: pointer; }
+
+/* SCENE  ---------------- */
+#canyon .background { background: #C8E7E2 url(../images/01/background.svg) repeat-x top left; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; min-width: 100%; min-height: 100%; }
+#canyon .mountains_back { width: 100%; height: 110%; z-index: 500; min-width: 100%; }
+#canyon .mountains_back .svg { margin-top: -5vmin; left: 0; height: 100%; width: 110%; background: url(../images/01/04_mountains.svg) repeat-x; background-position: top left; background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#canyon .mountains { left: 0; height: 100%; z-index: 500; min-width: 109%; }
+#canyon .mountains .svg { margin-top: -20vmin; left: 0; height: 100%; width: 100%; background: url(../images/01/03_mountains.svg) repeat-x; background-position: top left; background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#canyon .quotes { width: 100%; height: 100%; z-index: 1000; bottom: 0; min-width: 180%; }
+#canyon .grass { width: 100%; height: 100%; z-index: 1000; background: transparent url(../images/01/02_grass.svg) no-repeat; background-position: bottom left; 
+background-size: cover; bottom: 0; min-width: 180%; }
+#canyon .forest { width: 100%; height: 100%; z-index: 9000; background: url(../images/01/01_forest.svg); background-repeat: repeat-x; background-position: bottom left; background-size: cover; min-width: 750%; }
+#canyon .lights { left: 0; height: 100%; z-index: 500; min-width: 136%; }
+#canyon .lights svg { position: absolute; margin-top: -14vmin; margin-left: -100vmin; width: 15%; }
+
+/* TEXT  ---------------- */
+#canyon .scrolltext { color: #fff; height: 100%; left: 10vh; width: 90vh;  }
+#canyon .scrolltext p { font-style: italic; font-size: 7vmin; padding-left: 0; padding-right: 0; line-height: 11vmin; }
+#canyon .scrolltext p .firstletter { color: #903; font-size: 15vmin; }
+#canyon .scrolltext .source { color: #BEE3DD; }
+#canyon .scrolltext .source strong { color: #3B9490; }
+#canyon .scrolltext .source span { color: #11605c; }
+#canyon .scrolltext .source svg { fill: #11605c; }
+#canyon .scrolltext.second { background: #023330; color: #fff; height: 100%; left: 88%; width: 100vh;  }
+#canyon .scrolltext.second p { font-style: normal; font-size: 4vmin; padding-left: 0; padding-right: 0; line-height: 8vmin; }
+#canyon .scrolltext.second  p .firstletter { color: #903; font-size: 10vmin; }
+
+#canyon .across span { font-family: 'Josefin Sans'; text-transform: uppercase; font-size: 4.0rem; margin-right: 0.5rem; letter-spacing: 0.2rem; font-weight: 600; }
+#canyon .across span em { text-transform: none; letter-spacing: 0; margin-right: 0; font-size: 19.5rem; font-family: 'Vollkorn', serif; font-style: italic; font-weight: 200; }
+#canyon .across:first-child { color: #fff; }
+#canyon .across:nth-child(2) { color: #fff; margin-left: -40vmin; margin-top: -10vmin; }
+#canyon .across:nth-child(3) { color: #fff; margin-top: -28vmin;}
+#canyon .across:nth-child(3) span em { font-size: 11.8vmin; margin-right: 1vmin; }
+#canyon .across:nth-child(4) { color: #fff; margin-top: -2vmin;}
+#canyon .across:nth-child(4) span { font-weight: 900; font-size: 2.8rem; }
+
+
+@media only screen and (min-width: 1200px) and (max-width : 1300px) {
+	#canyon .harpyie_small svg { top: -50vmin; left: 500vmin; }
+	#canyon .mountains { left: 0; height: 100%; z-index: 500; min-width: 109%; }
+}
+@media only screen and (min-width: 1024px) and (max-width : 1200px) {
+	#canyon .harpyie_small svg { top: -50vmin; left: 450vmin; width: 40vmin; }
+	#canyon .harpyie_big svg { width: 70vmin; }
+	#canyon .mountains { left: 0; height: 100%; z-index: 500; min-width: 109%; }
+	#canyon .grass { min-width: 220%; }
+	#canyon .forest { min-width: 950%; }
+	#canyon .across span { font-size: 3.0rem; }
+	#canyon .across span em { font-size: 15.5rem; }
+}
+@media only screen and (min-width: 767px) and (max-width : 1024px) {
+	#canyon .harpyie_small svg { top: -50vmin; left: 450vmin; width: 30vmin; }
+	#canyon .harpyie_small2 svg { top: 20vmin; left: -25vmin; width: 22vmin; }
+	#canyon .harpyie_big svg { width: 50vmin; }
+	#canyon .grass { min-width: 260%; }
+	#canyon .forest { min-width: 1000%; }
+	#canyon .across span { font-size: 2.4rem; }
+	#canyon .across span em { font-size: 13.5rem; }
+	#canyon .across:nth-child(4) span { font-size: 2.4rem; }
+}
+@media only screen and (min-width: 480px) and (max-width : 767px) {
+	#canyon .harpyie_small svg { top: -30vmin; left: 390vmin; width: 20vmin; }
+	#canyon .harpyie_small2 svg { top: 20vmin; left: -10vmin; width: 15vmin; }
+	#canyon .harpyie_big svg { width: 40vmin; }
+	#canyon .grass { min-width: 310%; }
+	#canyon .forest { min-width: 1100%; }
+	#canyon .scrolltext { left: 2vh; width: 80vw; }
+	#canyon .scrolltext.second { left: 90%; width: 80vw;}
+	#canyon .across span { font-size: 1.6rem; }
+	#canyon .across span em { font-size: 9.0rem; }
+	#canyon .across:nth-child(2) { margin-top: -6vmin;  }
+	#canyon .across:nth-child(4) span { font-size: 1.6rem; }
+}	
+@media only screen and (max-width : 480px) {
+	#canyon .harpyie_small svg { top: -50vmin; left: 300vmin; width: 30vmin; }
+	#canyon .harpyie_small2 svg { top: -20vmin; left: 150vmin; width: 20vmin; }
+	#canyon .harpyie_big svg { width: 40vmin; }
+	#canyon .grass { min-width: 450%; }
+	#canyon .forest { min-width: 1450%; }
+	#canyon .scrolltext { left: 2vh; width: 80vw; }
+	#canyon .scrolltext.second { left: 92%; width: 90vw;}
+	#canyon .across span { font-size: 1.2rem; }
+	#canyon .across span em { font-size: 7.0rem; }
+	#canyon .across:nth-child(2) { margin-top: -6vmin;  }
+	#canyon .across:nth-child(4) span { font-size: 1.2rem; }
+}
+
+/*==============================
+=          CEMETERY             =
+==============================*/
+@keyframes flickering {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.57; }
+}
+.blink1 { -moz-animation: flickering 1.8s ease infinite; -webkit-animation: flickering 1.8s ease infinite; animation: flickering 1.8s ease infinite; }
+.blink2 { -webkit-animation-delay: 0.5s; -moz-animation: flickering 1.6s ease infinite; -webkit-animation: flickering 1.6s ease infinite; animation: flickering 1.6s ease infinite; }
+.blink3 { animation-delay: 0.5s; -moz-animation-delay: 0.5s; -webkit-animation-delay: 0.5s; -moz-animation: flickering 2.4s ease infinite; -webkit-animation: flickering 2.4s ease infinite; animation: flickering 2.4s ease infinite; }
+
+#cemetery .flicker { webkit-transition: all 1.8s; -o-transition: all 1.8s; transition: all 1.8s; }
+#cemetery .flicker:hover, #cemetery .flicker:focus { cursor: pointer; } 
+#cemetery .flicker.candleOff circle { width: 0; height: 0; } 
+#cemetery #ladder { position: absolute; margin-right: 20vmin; z-index: 999; webkit-transition: all 2.8s; -o-transition: all 2.8s; transition: all 2.8s; }
+#cemetery #ladder:hover { cursor: pointer; }
+.translate { -moz-transform-origin: bottom center; -webkit-transform-origin: bottom center; transform-origin: bottom center; 
+transform: translate(-7vmin,0); -webkit-transform: translate(-7vmin,0); -moz-transform: translate(-7vmin,0); -o-transform: translate(-7vmin,0); -ms-transform: translate(-7vmin,0);  } 
+.fall { -moz-transform-origin: bottom left; -webkit-transform-origin: bottom left; transform-origin: bottom left; 
+transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); -ms-transform: rotate(90deg);  } 
+
+#cemetery .books { width: 100%; height: 100%; z-index: 500; min-width: 140%; }
+#cemetery .running_cat { width: 100%; height: 100%; z-index: 600; min-width: 180%; }
+#cemetery .books_transparent { width: 100%; height: 100%; z-index: 9000; min-width: 140%; }
+#cemetery .books #bg { position: absolute; bottom: 0; left: 0; height: 100%; min-width: 100%; }
+#cemetery .books_transparent #bg { position: absolute; bottom: 0; left: 0; height: 100%; min-width: 100%; }
+#cemetery .isaak { width: 180%; height: 100%; z-index: 1000; }
+#cemetery .isaak svg#isaak { position: absolute; bottom: 1.2em; left: 0; height: 65%; min-width: 100%; }	
+#cemetery .isaak_transparent { width: 180%; bottom: 0; left: 0; height: 12%; z-index: 9900; }
+#cemetery .isaak_transparent .cat { position: absolute; bottom: 2em; margin-left: 55%; height: 15em; width: 18em; }	
+#cemetery .isaak_transparent .cat:hover { cursor: pointer; }
+#cemetery .bogen { width: 100%; height: 100%; z-index: 1400; background: url(../images/02/bogen.svg) repeat-x; background-position: bottom left; background-size: cover; min-width: 550%; }
+.blendmode { mix-blend-mode: overlay; }
+
+@keyframes spritesheet { 
+	0% { background-position: 0; transform: translateY(-2px); }
+	50% { transform: translateY(-1px); }
+	100% { background-position: -740px 0; transform: translateY(2px); }
+}
+@keyframes moving { 
+	0% { margin-left: 0; transform: scale(1,1); }
+	50% { margin-left: 300vmin; transform: scale(1,1); }
+	51% { margin-left: 300vmin; transform: scale(-1,1); }
+	100% { margin-left: -250vmin; transform: scale(-1,1); }
+}
+#cemetery .running_cat .cat { -webkit-animation: spritesheet 700ms steps(5) infinite; -moz-animation: spritesheet 700ms steps(5) infinite; animation: spritesheet 700ms steps(5) infinite; width: 500%; height: 100%; position: absolute; background: url(../images/02/cat_run.svg) no-repeat; background-position: bottom left;
+-webkit-transition: all 100ms ease-in-out; -moz-transition: all 100ms ease-in-out; transition: all 100ms ease-in-out; }
+#cemetery .running_cat .catdiv { -webkit-animation: moving 60s infinite; -moz-animation: moving 60s infinite; animation: moving 60s infinite; 
+position: absolute; overflow: hidden; width: 148px; height: 80px; bottom: 29.5vh; }
+
+
+/* TEXT  ---------------- */
+#cemetery .scrolltext { color: #fff; background: #221B16; height: 100%; left: 20vh; width: 32em;  }
+#cemetery .across { font-family: 'Open Sans'; }
+#cemetery .across span { text-transform: uppercase; font-size: 2.2rem; margin-right: 0.5rem; letter-spacing: 0.1rem; color: #fff !important; font-weight: 600; }
+#cemetery .across span em { text-transform: none; letter-spacing: 0.1vmin; font-size: 4.5rem; font-family: 'Vollkorn', serif; font-style: italic; font-weight: 200; }
+#cemetery .across:nth-child(2) { margin-left: -48%; margin-top: 15vmin; }
+#cemetery .across:nth-child(3) { font-size: 0.8vmin; margin-left: -30%; margin-top: -2vmin;}
+#cemetery .across:nth-child(4) { margin-left: -17%; margin-top: -2vmin;}
+#cemetery .across:nth-child(5) { margin-left: -7%; margin-top: .1vmin;}
+#cemetery .across:nth-child(5) span em { font-size: 7rem;  }
+
+@media only screen and (min-width : 1400px) {
+	#cemetery .books { min-width: 130%; }
+	#cemetery .books_transparent { min-width: 130%; }
+	#cemetery .bogen { min-width: 580%; }
+	#cemetery .isaak { width: 190%; }
+	#cemetery .running_cat .catdiv { bottom: 29.5vh; }
+}
+@media only screen and (min-width: 1200px) and (max-width : 1300px) {
+	#cemetery .books { min-width: 130%; }
+	#cemetery .books_transparent { min-width: 130%; }
+	#cemetery .bogen { min-width: 620%; }
+	#cemetery .isaak { width: 190%; }
+	#cemetery .scrolltext { left: 8vh; left: 5em; width: 32em; }
+	#cemetery .running_cat .catdiv { bottom: 29.5vh; }
+}
+@media only screen and (min-width: 1024px) and (max-width : 1200px) {
+	#cemetery .books { min-width: 130%; }
+	#cemetery .books_transparent { min-width: 130%; }
+	#cemetery .bogen { min-width: 680%; }
+	#cemetery .isaak { width: 160%; }
+	#cemetery .scrolltext { left: 5vh; left: 3em; padding: 12vh 6vmin 10vh 6vmin; width: 35em; }
+	#cemetery .running_cat .catdiv { bottom: 29.5vh; }
+}
+@media only screen and (min-width: 767px) and (max-width : 1024px) {
+	#cemetery .books { min-width: 150%; }
+	#cemetery .books_transparent { min-width: 150%; }
+	#cemetery .bogen { min-width: 780%; }
+	#cemetery .isaak { width: 200%; }
+	#cemetery .scrolltext { left: 5vh; left: 3em; padding: 12vh 6vmin 10vh 6vmin; width: 30em; }
+	#cemetery .across span { font-size: 1.8rem; }
+	#cemetery .across span em { font-size: 3.5rem; }
+	#cemetery .across:nth-child(5) span em { font-size: 6rem;  }
+	#cemetery .across:nth-child(2) { margin-left: -40%; margin-top: 10vmin; }
+	#cemetery .across:nth-child(3) { font-size: 0.8vmin; margin-left: -28%; margin-top: 0vmin;}
+	#cemetery .across:nth-child(4) { margin-left: -8%; }
+	#cemetery .across:nth-child(5) { margin-left: 5%; }
+	#cemetery .across:nth-child(5) span em { font-size: 7rem;  }
+	#cemetery .running_cat .catdiv { bottom: 29.5vh; }
+}
+@media only screen and (min-width: 480px) and (max-width : 767px) {
+	#cemetery .books { min-width: 160%; }
+	#cemetery .books_transparent { min-width: 160%; }
+	#cemetery .bogen { min-width: 890%; }
+	#cemetery .isaak { width: 290%; }
+	#cemetery .scrolltext { left: 1vh; left: 0.5em; padding: 12vh 2vmin 5vmin 2vmin; width: 90vw; }
+	#cemetery .across span { font-size: 1.5rem; }
+	#cemetery .across span em { font-size: 2.6rem; }
+	#cemetery .across:nth-child(5) span em { font-size: 6rem;  }
+	#cemetery .across:nth-child(2) { margin-left: -38%; margin-top: 10vmin; }
+	#cemetery .across:nth-child(3) { font-size: 0.8vmin; margin-left: -25%; margin-top: 0vmin;}
+	#cemetery .across:nth-child(4) { margin-left: -5%; }
+	#cemetery .across:nth-child(5) { margin-left: 5%; }
+	#cemetery .across:nth-child(5) span em { font-size: 5rem; }
+	#cemetery .running_cat .catdiv { display: none; visibility:hidden; }
+}	
+@media only screen and (max-width : 480px) {
+	#cemetery .books { min-width: 200%; }
+	#cemetery .books_transparent { min-width: 300%; }
+	#cemetery .bogen { min-width: 1320%; }
+	#cemetery .isaak { width: 520%; }
+	#cemetery .across span { font-size: 1.4rem; }
+	#cemetery .across span em { font-size: 2.5rem; }
+	#cemetery .scrolltext { left: 1vh; left: 0.5em; padding: 12vh 2vmin 5vmin 2vmin; width: 90vw; }
+	#cemetery .across:nth-child(2) { margin-left: -35%; margin-top: 10vmin; }
+	#cemetery .across:nth-child(3) { font-size: 0.8vmin; margin-left: -25%; margin-top: 0vmin;}
+	#cemetery .across:nth-child(4) { margin-left: 5%; }
+	#cemetery .across:nth-child(5) { margin-left: 25%; }
+	#cemetery .across:nth-child(5) span em { font-size: 5rem; }
+	#cemetery .running_cat .catdiv { display: none; visibility:hidden; }
+}
+
+
+
+/*==============================
+=          JANE EYRE           =
+==============================	*/	
+@keyframes blinking {	
+	0%, 15%, 25%, 100% { transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -o-transform: translateY(0); -ms-transform: translateY(0); }
+	10%, 20% { transform: translateY(0.7vmin); -webkit-transform: translateY(0.7vmin); -moz-transform: translateY(0.7vmin); -o-transform: translateY(0.7vmin); 
+	-ms-transform: translateY(0.7vmin); }
+}
+@keyframes blinking_bottom {	
+	0%, 15%, 25%, 100% { transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -o-transform: translateY(0); -ms-transform: translateY(0); }
+	10%, 20%  { transform: translateY(-0.6vmin); -webkit-transform: translateY(-0.6vmin); -moz-transform: translateY(-0.6vmin); -o-transform: translateY(-0.6vmin);  
+	-ms-transform: translateY(-0.6vmin); }
+}
+.blinking { -moz-animation: blinking 3s infinite; -webkit-animation: blinking 3s infinite; animation: blinking 3s infinite; }
+.blinking_bottom { -moz-animation: blinking_bottom 3s infinite; -webkit-animation: blinking_bottom 3s infinite; animation: blinking_bottom 3s infinite; }
+
+@keyframes moonshine {	
+	0%, 100% { box-shadow: 0 0 18em hsla(0, 0%, 100%, 1); -moz-box-shadow: 0 0 18em hsla(0, 0%, 100%, 1); -o-box-shadow: 0 0 18em hsla(0, 0%, 100%, 1); }
+	60% { box-shadow: 0 0 16em hsla(0, 0%, 100%, .7); -moz-box-shadow: 0 0 18em hsla(0, 0%, 100%, .7); -o-box-shadow: 0 0 16em hsla(0, 0%, 100%, .7); }
+}
+@keyframes disappear {	
+	0% { transform: translateX(0em); opacity: 0.4; }
+	70%  { transform: translateX(5em);  opacity: 0.9; }
+	90%  { transform: translateX(9em); opacity: 0; }
+	100% { transform: translateX(0em); opacity: 0;  }
+}
+.moving_figure { -moz-animation: disappear 13s infinite; -webkit-animation: disappear 13s infinite; animation: disappear 13s infinite;  }	
+
+@keyframes fire {	
+	0%, 50%, 75%, 100% { opacity: 0.9; }
+	20%, 70%  { opacity: 0.45;}
+}
+.fire { -moz-animation: fire 6s infinite; -webkit-animation: fire 6s infinite; animation: fire 6s infinite;  }	
+.fire2 { animation-delay: 2s; -moz-animation: fire 10s infinite; -webkit-animation: fire 10s infinite; animation: fire 10s infinite;  }	
+.fire3 { -moz-animation: fire 13s infinite; -webkit-animation: fire 13s infinite; animation: fire 13s infinite;  }	
+.fire3 { animation-delay: 2s; -moz-animation: fire 9s infinite; -webkit-animation: fire 9s infinite; animation: fire 9s infinite;  }	
+
+#eyre canvas { display: block; }
+#eyre #moon { -moz-animation: moonshine 4s infinite; -webkit-animation: moonshine 4s infinite; animation: moonshine 4s infinite; background: linear-gradient(#99a, #eef); border-radius: 100%; top: 30%; height: 25vmin; width: 25vmin; right: 10%; margin: -100px 0 0 -100px; position: absolute; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; transition: all 300ms ease; }
+#eyre .background { background: linear-gradient(#221318, #516D8E); width: 100%; height: 100%; position: fixed; }
+#eyre .hills { width: 165%; height: 145%; z-index: 1000; }
+#eyre .hills svg { position: absolute; bottom: 0; left: 0; height: 65%; min-width: 100%; }	
+#eyre .quotes { width: 250%; height: 100%; z-index: 1000; }
+#eyre .ground { width: 630%; height: 100%; z-index: 1400; }
+#eyre .ground svg { position: absolute; bottom: 0; left: 0; height: 100%; min-width: 100%; }	
+#eyre .txt { width: 100%; height: 100%; z-index: 1200; min-width: 400%; }
+#eyre .owl { cursor: pointer; }
+					
+			
+/* TEXT  ---------------- */
+#eyre .scrolltext { color: #666; background: rgba(255,255,255,0.7); height: auto; top: 18%; left: 20vh; width: 50vh; padding: 5vmin;-webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; transition: all 300ms ease;  }
+#eyre .scrolltext p { font-family: 'Amatic SC', serif; font-size: 9vmin; color: #221318;  padding: 0; line-height: 11vmin; }
+#eyre .scrolltext .source { color: #516D8E; margin-top: 2vmin; padding: 1em 0; }
+#eyre .scrolltext .source strong { color: #221318; }
+#eyre .scrolltext .source span { color: #516d8e; }
+#eyre .scrolltext .source svg { fill: #516D8E; }
+#eyre .across span { margin-right: 0.6vmin; color: #fff !important; font-family: 'Vollkorn', serif !important; letter-spacing: 0 !important; font-weight: 100 !important; font-style: italic; text-transform: none !important; font-size: 5.6vmin; }
+#eyre .across span em { color: #99346B; margin-right: 0.3vmin; font-weight: 100 !important; }
+#eyre .across.small span { font-size: 4.2vmin; }
+#eyre .across:first-child { margin-left: -180vmin; margin-top: 10vmin; }
+#eyre .across:nth-child(2) { margin-left: -170vmin; margin-top: 0; }
+#eyre .across:nth-child(3) { margin-top: 10vmin; margin-left: -150vmin; }
+#eyre .across:nth-child(4) { margin-top: 0; margin-left: -120vmin; }
+#eyre .across:nth-child(5) { margin-top: 0; margin-left: -110vmin; }
+#eyre .across:nth-child(6) { margin-left: 50vmin; margin-top: 0vmin; }
+
+@media only screen and (min-width : 1800px) {
+	#eyre .hills { width: 170%; }
+	#eyre .ground { width: 600%; }
+	#eyre .txt { min-width: 500%; }
+}
+@media only screen and (min-width : 1600px) {
+	#eyre .hills { width: 170%; }
+	#eyre .ground { width: 660%; }
+	#eyre .txt { min-width: 400%; }
+}
+@media only screen and (min-width : 1500px) and (max-width : 1600px) {
+	#eyre .hills { width: 160%; }
+	#eyre .ground { width: 640%;  }
+	#eyre .txt { min-width: 230%; }
+}
+@media only screen and (min-width : 1400px) and (max-width : 1500px) {
+	#eyre .hills { width: 180%; }
+	#eyre .ground { width: 620%;  }
+	#eyre .txt { min-width: 600%; }
+}
+@media only screen and (min-width: 1200px) and (max-width : 1300px) {
+	#eyre .hills { width: 200%; }
+	#eyre .ground { width: 680%; }
+	#eyre .txt { min-width: 580%; }
+}
+@media only screen and (min-width: 1024px) and (max-width : 1200px) {
+	#eyre .scrolltext { left: 15vh; }
+	#eyre .scrolltext p { font-size: 8vmin; line-height: 10vmin;  }
+	#eyre .hills { width: 200%; }
+	#eyre .ground { width: 750%; }
+	#eyre .txt { min-width: 790%; }
+}
+@media only screen and (min-width: 767px) and (max-width : 1024px) {
+	#eyre .hills { width: 200%; }
+	#eyre .ground { width: 800%; }
+	#eyre .txt { min-width: 600%; }
+}
+@media only screen and (min-width: 480px) and (max-width : 767px) {
+	#eyre .scrolltext { top: 12%; left: 12vh; width: 45vmin; }
+	#eyre .scrolltext p { font-size: 2.2em; line-height: 1.5em; }
+	#eyre .across { font-size: 1.5vmin; }
+	#eyre .ground { width: 320%; }
+	#eyre #moon { height: 13em; width: 13em; }
+	#eyre .hills { width: 260%; }
+	#eyre .ground { min-width: 1000%; }
+}	
+@media only screen and (max-width : 480px) {
+	#eyre .scrolltext { top: 10%; left: 8vh; width: 60vw; }	
+	#eyre .across span { font-size: 5.5em !important; }
+	#eyre .across span.small { font-size: 4.2em !important; }
+	#eyre .across:nth-child(2) { font-size: 0.5em; margin-left: -35vmin !important; }
+	#eyre .hills { width: 590%; }
+	#eyre .ground { min-width: 2500%; }
+}

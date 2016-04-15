@@ -1,0 +1,36 @@
+.success { opacity: 0.8; width: 86%; padding: 1em; margin: 0.75em auto 0.75em auto; color: #fff; background-color: #32B493; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+.error { opacity: 0.8; width: 86%; padding: 1em; margin: 0.75em auto 0.75em auto; color: #fff; background-color: #FF367A; -webkit-border-radius: 4px;-moz-border-radius: 4px; border-radius: 4px; }
+
+#contact-form { width: 90%; font-family: 'Open Sans'; }
+#contact-form div { min-width: 100%; margin: 0.9vmin auto 0.1vmin auto; }
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="url"],
+#contact-form textarea,
+#contact-form button[type="submit"] { min-width: 100%; font-weight: 400; height: 3.0em; box-shadow: none; }
+#contact-form label { width: 100%; margin-bottom: 0; }
+#contact-form label span { font-family: 'Open Sans'; font-weight: 800; color: #32B493; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9em; font-style: normal; }
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="url"],
+#contact-form textarea { min-width: 100%; color: #444; font-weight: 400; border: 1px solid #eee; }
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="url"]:hover,
+#contact-form textarea:hover { -webkit-transition: border-color 0.3s ease-in-out; -moz-transition: border-color 0.3s ease-in-out; transition: border-color 0.3s ease-in-out; border: 1px solid #32B493; }
+#contact-form textarea { height: 6em; min-width: 80%; }
+#contact-form button[type="submit"] { margin-top: 2em; margin-bottom: 3em; box-shadow: none; border: none; cursor:pointer; background: #32B493; color: #fff; text-transform: uppercase; letter-spacing: 0.2vmin; font-weight: 700;  }
+#contact-form button[type="submit"]:hover, #contact-form button[type="submit"]:active { background: #2c9c80; }
+#contact-form input:focus, #contact-form textarea:focus { border: 1px solid #32B493; }
+
+::-webkit-input-placeholder {  color:#666; }
+:-moz-placeholder { color:#666; }
+::-moz-placeholder { color:#666; }
+:-ms-input-placeholder { color:#666; }
+
+@media only screen and (max-width : 1024px) {
+	#contact-form, .success, .error { width: 60%; }
+}
+@media only screen and (max-width : 767px) {
+	#contact-form, .success, .error { width: 100%; }
+}

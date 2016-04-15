@@ -1,0 +1,16 @@
+.toast-title { font-weight: bold; }
+.toast-message { -ms-word-wrap: normal; word-wrap: normal; font-size: 1.4em; font-family: 'Open Sans'; text-transform: uppercase; font-weight: 600;  }
+.toast-message i { margin-left: 5px; font-size: 0.9em; font-weight: 100;  }
+.toast-message a, .toast-message label { color: #ffffff; }
+.toast-message a:hover { color: #cccccc; text-decoration: none; }
+.toast-bottom-right {  right: 1em;  bottom: 1em; }
+#toast-container { position: fixed; z-index: 9999; pointer-events: none;  }
+#toast-container * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#toast-container > div { position: relative; padding: .8em 1em; pointer-events: auto; overflow: hidden; width: auto; height: auto; color: #ffffff; }
+#toast-container > :hover { opacity: 1; }
+#toast-container > .toast-info { background: none; }
+#toast-container.toast-top-center > div,
+#toast-container.toast-bottom-center > div { width: 100%; height: 100%; margin-left: auto; margin-right: auto; }
+#toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div { width: 100%; margin-left: auto; margin-right: auto; }
+.toast { background: none; }
+.toast-info { background: none; }

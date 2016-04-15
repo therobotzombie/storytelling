@@ -1,0 +1,100 @@
+/**
+ * Scrollator jQuery Plugin
+ * Scrollator is a jQuery-based replacement for the browsers scroll bar, which doesn't use any space.
+ * version 1.1, July 3rd, 2014
+ * by Ingi P. Jacobsen
+ */
+#scrollator_holder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.scrollator {
+	overflow: hidden !important;
+}
+	
+.scrollator_lane_holder {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 1.0em;
+	background-color: transparent;
+	opacity: 0;
+	-webkit-transition: width 200ms, opacity 600ms;
+	-moz-transition:    width 200ms, opacity 600ms;
+	-ms-transition:     width 200ms, opacity 600ms;
+	-o-transition:      width 200ms, opacity 600ms;
+	transition:         width 200ms, opacity 600ms;
+}
+
+.scrollator_lane {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-transition: background 500ms;
+	-moz-transition:    background 500ms;
+	-ms-transition:     background 500ms;
+	-o-transition:      background 500ms;
+	transition:         background 500ms;
+}
+
+.scrollator_lane_holder.scrollator_on_body {
+	position: fixed;
+}
+.scrollator_lane_holder.hover, 
+.scrollator_lane_holder:hover {
+
+}
+.scrollator_lane_holder.hover > .scrollator_lane, 
+.scrollator_lane_holder:hover > .scrollator_lane {
+	background-color: rgba(255, 255, 255, 0.0);
+}
+.scrollator_handle_holder {
+	position: absolute;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	width: 1em;
+	background-color: #fff;
+	-webkit-transition: width 500ms;
+	-moz-transition:    width 500ms;
+	-ms-transition:     width 500ms;
+	-o-transition:      width 500ms;
+	transition:         width 500ms;
+}
+.scrollator_handle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgba(25, 25, 25, 1);
+	webkit-transition: all 1.8s; -o-transition: all 1.8s; transition: all 1.8s; 
+}
+.scrollator_handle:hover {
+	cursor: -webkit-grab;  
+}
+.scrollator_handle:focus {
+	cursor: -webkit-grabbing;  
+}
+.scrollator_lane_holder.hover .scrollator_handle_holder, 
+.scrollator_lane_holder:hover .scrollator_handle_holder {
+	transform: scaleY(1.1); 
+	-webkit-transform: scaleY(1.1); 
+	-moz-transform: scaleY(1.1); 
+	-o-transform: scaleY(1.1); 
+	-ms-transform: scaleY(1.1);  
+}
