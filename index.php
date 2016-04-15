@@ -6,8 +6,7 @@
 <!--[if IE 9 ]>   <html id="ie9" class="ie ie-old"><![endif]-->
 <!--[if gt IE 9]><!--><html><!--<![endif]-->
 
-<html>
-      
+<html>     
     <?php 
         $page = $_SERVER['REQUEST_URI']; 
         $page = str_replace('/storytelling/', '', $page);  // online:  '/'   - localhost: /storytelling/
@@ -31,7 +30,6 @@
                 default: $page_title = 'Home'; break; 
          }
     ?>
-
 <head>
     <title>We're All Stories &middot; <?php if (isset($page_title)): ?><?php echo $page_title; ?><?php endif; ?></title>
     <?php include_once("./head-tag.php"); ?>
