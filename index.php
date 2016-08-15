@@ -29,7 +29,6 @@
                 default: $page_title = 'A Storytelling Website &middot; Laura A. Redeker'; break; 
          }
     ?>
-
 <head>
     <title>We're All Stories &middot; <?php if (isset($page_title)): ?><?php echo $page_title; ?><?php endif; ?></title>
     <?php include_once("./head-tag.php"); ?>
