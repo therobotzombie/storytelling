@@ -3,16 +3,11 @@
 	 viewBox="0 0 1102.4 221" enable-background="new 0 0 1102.4 221" xml:space="preserve">
 <g id="pile_4_">
 	<g id="yellow_1_">
-		
 			<rect x="936.2" y="40.9" transform="matrix(0.9965 8.394510e-002 -8.394510e-002 0.9965 14.2396 -79.1516)" fill="#FFB210" width="24.3" height="177.6"/>
 		<g>
-			
 				<rect x="942.7" y="51.4" transform="matrix(0.9965 8.394454e-002 -8.394454e-002 0.9965 7.8486 -79.9611)" fill="#866E5E" width="24.3" height="3.8"/>
-			
 				<rect x="941.4" y="66.7" transform="matrix(0.9965 8.394510e-002 -8.394510e-002 0.9965 9.1268 -79.7996)" fill="#866E5E" width="24.3" height="3.8"/>
-			
 				<rect x="931.8" y="180" transform="matrix(0.9965 8.394510e-002 -8.394510e-002 0.9965 18.6068 -78.5982)" fill="#866E5E" width="24.3" height="3.8"/>
-			
 				<rect x="930.5" y="195.3" transform="matrix(0.9965 8.394518e-002 -8.394518e-002 0.9965 19.8851 -78.4362)" fill="#866E5E" width="24.3" height="3.8"/>
 		</g>
 	</g>
@@ -20,8 +15,6 @@
 		<polygon fill="#5E5571" points="1013.5,60 970.8,62.1 978.8,218.4 1022,216.2 1014.2,63.6 1014,59.9 		"/>
 		<polygon fill="#403A4D" points="998.5,99.2 989.4,99.7 995.4,217.6 1004.3,217.1 998.4,101.7 998.2,99.2 		"/>
 	</g>
-	
-	
 	
 	<!-- A TALE FOR THE TIME BEING 
 	<a class="hvr-wobble-horizontal" xlink:href="#book2" title="Pick this Book!" xlink:title="Pick this Book!"> -->
@@ -100,7 +93,6 @@
 				</g>
 			</g>
 		</g>
-	
 	<!-- </a> / A TALE FOR THE TIME BEING -->
 	
 	
@@ -164,8 +156,7 @@
 		<g id="crimeandpunishment">
 			<g>
 				<g>
-					
-						<rect x="658.5" y="31.3" transform="matrix(-0.9974 7.256766e-002 -7.256766e-002 -0.9974 1360.277 200.055)" fill="#403A4D" width="36.1" height="187"/>
+					<rect x="658.5" y="31.3" transform="matrix(-0.9974 7.256766e-002 -7.256766e-002 -0.9974 1360.277 200.055)" fill="#403A4D" width="36.1" height="187"/>
 				</g>
 				
 					<rect x="667.9" y="27.1" transform="matrix(7.256759e-002 0.9974 -0.9974 7.256759e-002 664.6524 -629.0255)" fill="#5E5571" width="5.3" height="31.5"/>
@@ -215,7 +206,6 @@
 			</g>
 		</g>
 	<!-- </a> / CRIME AND PUNISHMENT  -->
-
 </g>
 
 
@@ -241,7 +231,6 @@
 	
 	
 	<!-- MURAKAMI -->
-	
 		<g id="murakami">
 			<rect x="396.4" y="31.7" fill="#866E5E" width="55.6" height="187.6"/>
 			<g>

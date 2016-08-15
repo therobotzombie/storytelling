@@ -21,7 +21,6 @@ $('#onoff_nav').click(function() {
 	closeNav();
 });
 
-
 // SOUND EFFECTS 
 	$('.meow').easyAudioEffects({
 	   ogg : "sound/effects/meow.ogg",
@@ -65,4 +64,9 @@ $('#onoff_nav').click(function() {
 	   eventType : "click", 
 	   playType : "oneShotPolyphonic"
 	});
-
+	$('.alarm').easyAudioEffects({
+	   ogg : "sound/effects/alarm.ogg",
+	   mp3 : "sound/effects/alarm.mp3",
+	   eventType : "hover", 
+	   playType : "oneShotPolyphonic"
+	});

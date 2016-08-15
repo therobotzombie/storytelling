@@ -13,21 +13,20 @@
         $page = str_replace('index.php', '', $page); 
         $page = str_replace('?page=', '', $page); 
         $page = !$page ? "" : $page;
-
         // for checking page types
         $no_scrolling = array('home', '', '404', 'imprint', 'disclaimer');
         $scrolling = array('cemetery', 'canyon', 'eyre');	
 		$no_home = array('404', 'imprint', 'disclaimer');
 
         switch ( @$_GET ['page'] ) {
-                case "home": $page_title = 'A Storytelling Website'; break;
+                case "home": $page_title = 'A Storytelling Website &middot; Laura A. Redeker'; break;
 				case "404": $page_title = '404! The page cannot be found.'; break;
 				case "imprint": $page_title = 'Imprint / Impressum'; break;
 				case "disclaimer": $page_title = 'Disclaimer / Haftungsausschluss'; break;
 				case "canyon": $page_title = 'The Book of Lost Things'; break;
 				case "cemetery": $page_title = 'The Shadow of The Wind'; break;
 				case "eyre": $page_title = 'Jane Eyre'; break;
-                default: $page_title = 'Home'; break; 
+                default: $page_title = 'A Storytelling Website &middot; Laura A. Redeker'; break; 
          }
     ?>
 <head>
@@ -75,7 +74,6 @@
     <script src="js/skrollr.min.js"></script>  <!-- scroll-activated animations -->  
     <script src="js/browser-detection.js"></script>   <!-- browser detection --> 
     <script src="js/scripts.js"></script>  <!-- custom scripts -->
-
     <script>
 	  	// bootstrap scripts
 		$("body").tooltip({ selector:'[data-toggle=tooltip]'});
@@ -101,9 +99,8 @@
 			$('#<?php echo $page;?>').scrollator({
 				zIndex: '999999999999' 
 			});
-
 			$("#fakeLoader_scroll").fakeLoader({
-				timeToHide: 1000  //1800
+				timeToHide: 1400  //1800
 			});
 			
 			// horizontal scrolling 
@@ -164,8 +161,7 @@
 			<?php elseif(in_array($page, $no_scrolling))  : ?>
 				$("#fakeLoader").fakeLoader({
 					timeToHide: 2200 
-				});
-						 
+				});		 
 				// add these scripts only on normal pages
 				<?php if(in_array($page, $no_home))  : ?>
 					$('body').scrollator({

@@ -1,6 +1,5 @@
 .success { opacity: 0.8; width: 86%; padding: 1em; margin: 0.75em auto 0.75em auto; color: #fff; background-color: #32B493; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
 .error { opacity: 0.8; width: 86%; padding: 1em; margin: 0.75em auto 0.75em auto; color: #fff; background-color: #FF367A; -webkit-border-radius: 4px;-moz-border-radius: 4px; border-radius: 4px; }
-
 #contact-form { width: 90%; font-family: 'Open Sans'; }
 #contact-form div { min-width: 100%; margin: 0.9vmin auto 0.1vmin auto; }
 #contact-form input[type="text"],

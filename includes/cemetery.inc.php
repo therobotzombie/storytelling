@@ -1,7 +1,6 @@
 <div id="scrolling">
 <!-- THE CEMETERY OF FORGOTTEN BOOKS ----------------------------------------->
-<section class="section horizontal_scroll" id="cemetery">      
-                              
+<section class="section horizontal_scroll" id="cemetery">                                   
         <div class="books scroll">
             <?php echo file_get_contents("./images/02/books.svg"); ?>       
         </div>
@@ -45,8 +44,7 @@
                 <span data-5600="opacity:0;" data-5800="opacity:1;" data-9200="opacity:0;"><em>heart.</em></span>
                 <span data-5800="opacity:0;" data-6000="opacity:1;" data-9800="opacity:0;"><i class="fa fa-quote-right"></i></span>
            </div>      
-        </div>
-        
+        </div>       
 
         <div class="bogen scroll">
             <div class="scrolltext">
@@ -65,7 +63,6 @@
         	<div class="cat meow">
             </div>
         </div>  
-        
         <div class="books_transparent scroll">
         	<div>
             	<?php echo file_get_contents("./images/02/books_transparent.svg"); ?>  

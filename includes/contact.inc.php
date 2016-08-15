@@ -12,7 +12,9 @@
 			<div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12 col-md-8 col-md-offset-2">
-							
+							<p>Please fill out the form below or write an email to: <a href="mailto:laura@weareallstories.de" 
+                            target="_blank" title="Write an e-mail to laura@weareallstories.de" data-index="1">laura@weareallstories.de</a><br/><br/>
+                            </p>
                             <div id="form-messages"></div>
 
                              <form id="contact-form" class="center-block" action="./includes/mailer.php" method="post">

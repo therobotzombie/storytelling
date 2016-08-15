@@ -12,6 +12,7 @@ Location:              Munich, Germany
 
 
 
+
 /* THANKS */
   
 Bootstrap      	       (http://getbootstrap.com/) 
@@ -19,6 +20,7 @@ jQuery                 (http://jquery.com/)
 FullPage.js            (http://alvarotrigo.com/fullPage/) 
 jinvertScroll          (http://www.pixxelfactory.net/jInvertScroll/) 
 skrollr		       (https://github.com/Prinzhorn/skrollr) 
+
 
 
 /* SITE */

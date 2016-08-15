@@ -30,7 +30,7 @@
                                             <span><i class="fa fa-bookmark"></i>About the Book</span><br/>
                                             <em> The Book of Lost Things</em> is an engaging fantasy novel, 
                                             "a dark and compelling tale that reminds us of the enduring power of stories in our lives." 
-                                            <a href="https://www.goodreads.com/book/show/69136.The_Book_of_Lost_Things">[1]</a>. 
+                                            <a href="https://www.goodreads.com/book/show/69136.The_Book_of_Lost_Things" rel="nofollow" target="_blank" title="Go to goodreads.com">[1]</a>. 
                                             Connolly leads his twelve year old main character, David, into a world similar to his favorite fairy tales. 
                                             It is a realm of myths, fairy-tales and folk-lores, however every well-known tale is weirdly wrong, 
                                             broken and twisted. 
@@ -44,7 +44,7 @@
                                             who has promised him to get to the king. Running to safety from wolves and Loups, they 
                                             travel to the edge of the forest and approach a canyon guarded by trolls and harpies.  
                                             <br/><br/>
-                                            <a href="./index.php?page=canyon" class="btnlink">explore book scene  <i class="fa fa-angle-right"></i></a>
+                                            <a href="./index.php?page=canyon" title="Explore book scene 'The Book of Lost Things'" class="btnlink">explore book scene  <i class="fa fa-angle-right"></i></a>
                                       </div>
                                     </div>
                                   </div>
@@ -79,7 +79,7 @@
                                             Daniel, the main character, is allowed to adopt a book and picks "The Shadow of the Wind" by Julian Carax. 
                                             And thus the story begins.. 
    											<br/><br/>
-                                            <a href="./index.php?page=cemetery" class="btnlink">explore book scene  <i class="fa fa-angle-right"></i></a>
+                                            <a href="./index.php?page=cemetery" class="btnlink" title="Explore book scene 'The Shadow Of The Wind'">explore book scene  <i class="fa fa-angle-right"></i></a>
                                       </div>
                                     </div>
                                   </div>
@@ -110,7 +110,7 @@
                                                Thereby she displays an inspiring strength of character, escaping love and comfort instead of sacrificing her own integrity. 
                                                <br/><br/>
 
-                                            <a href="./index.php?page=eyre" class="btnlink">explore book scene  <i class="fa fa-angle-right"></i></a>
+                                            <a href="./index.php?page=eyre" class="btnlink" title="Explore book scene 'Jane Eyre'">explore book scene  <i class="fa fa-angle-right"></i></a>
                                       </div>
                                     </div>
                                   </div>

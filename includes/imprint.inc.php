@@ -10,30 +10,34 @@
                                      <h2>Contact Person</h2>
                                      <p>
                                          Laura A. Redeker<br/>
-                                         Munich, Germany<br/>
-                                        
-                                        <i class="fa fa-envelope"></i> <a href="mailto:laura@weareallstories.de" data-index="1">laura@weareallstories.de</a><br/>
-                                        <i class="fa fa-arrow-circle-right"></i> <a href="#contact" data-toggle="modal" data-target="#contactModal" data-index="2">Contact Form</a><br/><br/>
-                   
+                                         Munich, Germany<br/><br/>
+                                        <i class="fa fa-envelope-o"></i> <a href="#contact" data-toggle="modal" data-target="#contactModal" title="open contact page" data-index="1">E-Mail Contact</a><br/>
+                                        <i class="fa fa-external-link"></i> <a href="http://galaxiesanddust.de" target="_blank" title="go to www.galaxiesanddust.de" data-index="2">Personal Website</a><br/>
                                     </p>
                                 </div>
                                 <div class="col-sm-12  col-md-offset-3 col-md-6">
                                     <h2>We're All Stories</h2>
                                     <p>
                                         .. is an project of a Fine Arts and Multimedia (Kunst und Multimedia) 
-                                        student in Munich, carried out between April 2015 and January 2016. 
+                                        student in Munich, carried out between April 2015 and January 2016 and part 
+                                        of the 2016 exhibition 
+                                        <a href="http://www.senseven.net" target="_blank" title="go to www.SENSEVEN.net"data-index="3">SENSEVEN <i class="fa fa-external-link"></i></a>  
                                         <br/><br/>
+                                        <a href="#about" class="btnlink" title="open about page" data-toggle="modal" data-target="#aboutModal" data-index="4">
+                                        what is this all about?</a><br/><br/>
+                                       <br/>
                                     </p>
                                     <p>
-                                        <strong>Site:</strong><br/>
-                                        <strong>Standards:</strong> HTML5, CSS3, SVG<br/>
-                                        <strong>Optimized for:</strong> Google Chrome (V.47)<br/>
-                                        <strong>Resolution:</strong> Best viewed on a desktop screen (min. 1024 x 768) and fullscreen<br/>
+                                        <h2>Technical Details</h2>
+                                        <strong>Site Standards:</strong> HTML5, CSS3, SVG, JavaScript<br/>
+                                        <strong>Optimized for:</strong> Google Chrome (V.47) on Windows 10<br/>
+                                        <strong>Resolution:</strong> Best viewed in landscape format (4:3 - 16:9) on a desktop screen 
+                                        (ideally 1280 x 720, min. 850 x 540 px) and in fullscreen mode (press F11!)<br/>
                                         <strong>Components:</strong> jQuery, Bootstrap, Skrollr, jinvertScroll and <a href="#webscripts">many more..</a> <br/>
-                                        <strong>Software:</strong> Sublime Text, Netbeans, Adobe Illustrator<br/><br/>
+                                        <strong>Software:</strong> Sublime Text, NetBeans, Adobe Illustrator<br/><br/>
                                         
                                         <div class="logo_small"><?php echo file_get_contents("./img/logo.svg"); ?></div>
-                                        <span><i class="fa fa-copyright"></i> 2015 <em>We're All Stories.</em></span><br/><br/>
+                                        <span><i class="fa fa-copyright"></i> 2015 - <?php echo date("Y"); ?></strong> We're All Stories</span><br/><br/>
                                     </p>  
                                 </div>
                     </div>

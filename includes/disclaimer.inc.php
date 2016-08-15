@@ -44,7 +44,7 @@
                                     </p>
                                     <p>
                                     <b>Quelle:</b> 
-                                    <a href="http://www.e-recht24.de/muster-datenschutzerklaerung.html" target="_blank">Datenschutzerklärung</a> 
+                                    <a href="http://www.e-recht24.de/muster-datenschutzerklaerung.html" title="eRecht24.de aufrufen"  target="_blank" rel="nofollow">Datenschutzerklärung</a> 
                                     von eRecht24.<br/><br/>
                                     </p>
                                 </div>
@@ -85,7 +85,7 @@
                                    <br/><br/>
                                     </p>
                                     <p>
-                                    <b>Quelle:</b> <a href="http://www.e-recht24.de/muster-disclaimer.html" target="_blank">Disclaimer</a> von eRecht24.
+                                    <b>Quelle:</b> <a href="http://www.e-recht24.de/muster-disclaimer.html" title="eRecht24.de aufrufen" target="_blank" rel="nofollow">Disclaimer</a> von eRecht24.
                                     </p>
                                  </div>
                  		</div> <!-- / row -->      

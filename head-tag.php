@@ -3,8 +3,8 @@
 <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
 <!-- Meta Tags -->
-<meta name="description" lang="EN" content="We're All Stories leads you into a world of fairy tales and fiction, which can be explored according to your own wishes. It is an interactive storytelling website, merging modern web technologies with the art of storytelling and a passion for books.">
-<meta name="description" lang="DE" content="Geschichten zum Leben erwecken. We’re All Stories  ist eine interaktive Storytelling-Webseite, die Kinder und Erwachsene gleichermaßen in eine Welt aus Märchen und Geschichten eintauchen lässt.">
+<meta name="description" lang="EN" content="We're All Stories leads you into a world of fairy tales and fiction, which can be explored according to the user's own wishes.">
+<meta name="description" lang="DE" content="We’re All Stories ist eine interaktive Storytelling-Webseite, die Kinder und Erwachsene gleichermaßen in eine Welt aus Märchen und Geschichten eintauchen lässt.">
 <meta name="author" content="Laura A. Redeker">
 <meta name="keywords" lang="EN" content="interactive, storytelling, fiction, books, illustration, animation, fine arts and multimedia, project, laura a. redeker">
 <meta name="keywords" lang="DE" content="interaktiv, storytelling, fiktion, bücher, illustration, animation, kunst und multimedia, projektarbeit, abschlussjahrgang 2016, laura a. redeker">
@@ -40,12 +40,20 @@
 <meta property="og:description" content="We're All Stories leads you into a world of fairy tales and fiction, which can be explored according to your own wishes. It is an interactive storytelling website, merging modern web technologies with the art of storytelling and a passion for books.">
 
 <!-- Social: Google+ / Schema.org  -->
-<link rel="author" href="Laura A. Redeker">
-<link rel="publisher" href="Laura A. Redeker">
+<link rel="author" href="Laura%20A.%20Redeker">
+<link rel="publisher" href="Laura%20A.%20Redeker">
 <meta itemprop="name" content="We're All Stories. A Storytelling Website.">
 <meta itemprop="description" content="We're All Stories leads you into a world of fairy tales and fiction, which can be explored according to your own wishes. It is an interactive storytelling website, merging modern web technologies with the art of storytelling and a passion for books. By the combination of various multimedia contents such as animation, illustration, typography, music and sound effects, selected book scenes come to life and offer an unique visual and auditory experience.">
 <meta itemprop="image" content="http://story.galaxiesanddust.de/img/meta/weareallstories.png">
 
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/fakeLoader.min.js"></script>
+<!--[if IE]>
+    <script type="text/javascript">
+         var console = { log: function() {} };
+    </script>
+<![endif]
+-->    
 <!-- Styles -->
 <link href="css/normalize.css" rel="stylesheet" />
  <!--[if lt IE 9]>
@@ -56,18 +64,10 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
 <link rel="stylesheet" href="css/animate.css" />
 <link rel="stylesheet" href="css/contact.css" media="screen" />
-<link rel="stylesheet" href="css/screen.css" media="screen" />
-<link rel="stylesheet" href="css/scenes.css" media="screen" />
-<link rel="stylesheet" href="css/fakeLoader.css" media="screen" />
+<link rel="stylesheet" href="css/screen.min.css" media="screen" />
+<link rel="stylesheet" href="css/scenes.min.css" media="screen" />
+<link rel="stylesheet" href="css/fakeLoader.min.css" media="screen" />
 <link rel="stylesheet" href="css/jquery.fullpage.css" media="screen" />
 <link rel="stylesheet" href="css/fm.scrollator.jquery.css" media="screen" />
 <link rel="stylesheet" href="css/toastr.css" media="screen" />
 
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/fakeLoader.js"></script>
-<!--[if IE]>
-    <script type="text/javascript">
-         var console = { log: function() {} };
-    </script>
-<![endif]
--->    
