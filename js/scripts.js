@@ -1,5 +1,3 @@
-// Scripts
-	
 // fullscreen layout
 $(function() {
 	$('#fullpage').fullpage({
@@ -89,10 +87,7 @@ function scrollDown() {
 	jQuery.fx.interval = 80;
 	$("html, body").animate({ scrollTop: $(document).height() }, { duration: 40000, easing: 'linear' });
 }
-
-
 // SCENE ACTIONS
-
 // candles
 $('.flicker').click(function() {
 	var candleID = this.id;	

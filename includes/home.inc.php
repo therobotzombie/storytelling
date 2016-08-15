@@ -4,13 +4,11 @@
           <div class="border" id="introduction">
                 <h1>We're All Stories</h1>
                 <h2>In The End</h2>
-                <!--<h3>So better make it a good one</h3>-->
                 <h3>a storytelling website</h3>
                 <span class="visible-md visible-lg"><a href="#bookshelf" title="scroll down">scroll down</a></span>
                 <div class="arrow animated bouncing"></div>   
            </div>   
     </section>  
-    
     <!-- SECOND PAGE - BOOKSHELF -->
     <section class="section" id="section1">
             <div class="type-wrap">
@@ -20,7 +18,6 @@
                 </div>
                 <span id="typed" style="white-space:pre;"></span> 
            </div>
-    
             <div id="bigbookshelf">
                  <div class="row" >
                     <div class="bookshelf one">
@@ -38,18 +35,14 @@
                     </div>
                  </div>
           </div>
-
     </section>
-           
     <!-- FOOTER -->
     <section class="section" id="section2">
         <?php include("./includes/footer.inc.php"); ?>
     </section>
-
 </div>
 
 
-    
 <!-- type animation -->       
 	 <script>
 		$(function() {
